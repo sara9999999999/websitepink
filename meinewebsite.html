@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+{
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
+}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "source": "/feedback/((?!general).*)",
+  "destination": "/api/feedback/general"
+}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "source": "/feedback/:id",
+  "destination": "/api/feedback/:id"
+}
+
+<head>
+<p>Geschichte<p>
+</head>
+
+<body>
+
+</body>
+</html>
+<!doctype html>
